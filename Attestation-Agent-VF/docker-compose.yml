@@ -1,0 +1,7 @@
+version: '3'
+services:
+  prover:
+    build: .
+    ports:
+     - 8085:8085/tcp
+    command: -api http://0.0.0.0:8085/api
